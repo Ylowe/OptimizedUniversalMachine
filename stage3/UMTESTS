@@ -1,0 +1,17 @@
+halt.um
+loadval.um
+output.um
+input.um
+input_string.um
+mapseg.um
+unmapseg.um
+segstore.um
+segload.um
+mapverbose.um
+cmov.um
+add.um
+loadpgm.um
+mul.um
+addandmul.um
+div.um
+nand.um
