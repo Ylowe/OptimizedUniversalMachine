@@ -2,7 +2,7 @@
 Optimized version of the Universal Machine found in the UniversalMachine repo
 
 Use Kcachegrind to optimize the performance of the univeral machine emulator.
-Stage 0 is a clone of the original universal machine. Each subsequent iteration is an improvement on the UM C code
+Stage 0 is a clone of the original universal machine. Each subsequent iteration is an improvement on the UM C code. 
 See labnotes for details and changes between stages
 
 ************* Routine that takes up the most time in the UM *************
@@ -20,7 +20,7 @@ This code could be improved by keeping the pc in one register, fetching
 the instruction, and then incrementing the register:
 
 mov 0x4(%rbx, %r15d, 4), %eax // fetch instruction from seg0 at pc
-add $0x1, %r15d				  // increment pc
+add $0x1, %r15d		      // increment pc
 
 Extracting the opcode from the instruction is done with a simple right-shift,
 and this cannot be improved. Likewise, comparing the opcode with that for 
